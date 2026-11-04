@@ -29,5 +29,16 @@ jobs:
       - name: Upload plugin JAR
         uses: actions/upload-artifact@v4
         with:
-          name: CustomPowersSMP
+          name: CustomPowersSMP-Plugin
           path: target/custompowerssmp-1.0.0.jar
+
+      - name: Package resource pack
+        run: |
+          cd resource-pack
+          zip -r ../CustomPowersSMP-ResourcePack.zip .
+
+      - name: Upload resource pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: CustomPowersSMP-ResourcePack
+          path: CustomPowersSMP-ResourcePack.zip
