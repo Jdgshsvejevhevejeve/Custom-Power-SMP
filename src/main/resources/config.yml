@@ -1,0 +1,6 @@
+# Resource pack URL must be a direct downloadable ZIP URL to enable server prompts.
+resource-pack-url: ""
+resource-pack-sha1: ""
+starting-lives: 3
+cooldown-seconds: 25
+ability-radius: 8.0

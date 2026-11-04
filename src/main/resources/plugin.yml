@@ -1,0 +1,17 @@
+name: CustomPowersSMP
+version: 1.0.0
+main: com.harsh.custompowers.CustomPowersSMP
+api-version: '1.21'
+author: Harsh
+description: Eight custom powers, power stealing and three lives.
+commands:
+  power:
+    description: View, select and use your powers.
+    usage: /power [list|select <power>|use]
+    aliases: [powers]
+  cpsmp:
+    description: Custom Powers SMP admin command.
+    usage: /cpsmp reload
+permissions:
+  custompowers.admin:
+    default: op
